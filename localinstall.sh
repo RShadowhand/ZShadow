@@ -24,6 +24,6 @@ if [ ! -d "$ZSH" ]; then
     exit
 fi
 
-# cp -ar ./themes/ $ZSH/custom/
+cp -ar ./themes/ $ZSH/custom/
 printf "${GREEN}Themes are copied into \"$ZSH/custom\".\n"
 printf "Change the theme line in your .zshrc to either $YELLOW'ZShadow-Time'$GREEN or $YELLOW'ZShadow-Name'$GREEN.${NORMAL}\n"
