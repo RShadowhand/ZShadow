@@ -18,12 +18,18 @@ else
 	NORMAL=""
 fi
 
+printf "\n"
+
 if [ ! -d "$ZSH" ]; then
     printf "${RED}You don't have oh-my-zsh installed.\n"
     printf "You'll need to install oh-my-zsh to be able to use ZShadow.${NORMAL}\n"
+    printf "Exiting.\n\n"
     exit
 fi
 
-cp -ar ./themes/ $ZSH/custom/
-printf "${GREEN}Themes are copied into \"$ZSH/custom\".\n"
-printf "Change the theme line in your .zshrc to either $YELLOW'ZShadow-Time'$GREEN or $YELLOW'ZShadow-Name'$GREEN.${NORMAL}\n"
+source $ZSH/oh-my-zsh.sh
+
+cp -ar ./themes/ "$ZSH_CUSTOM"/
+
+printf "${GREEN}Themes are copied into $YELLOW\""$ZSH_CUSTOM"\"$GREEN.\n"
+printf "Change the theme line in your $YELLOW'.zshrc'$GREEN to either $YELLOW'ZShadow-Time'$GREEN or $YELLOW'ZShadow-Name'$GREEN.${NORMAL}\n\n"

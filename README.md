@@ -4,16 +4,16 @@ A minimal BASH-like theme that changes from green to red when logged in as root 
 
 ## How to Install
 
-Either: 
+Using git: 
 
 * `git clone git@github.com:RShadowhand/ZShadow.git`
 * `./localinstall.sh`
 
-or wget:
+Using wget:
 
 *  `sh -c "$(wget https://raw.github.com/RShadowhand/ZShadow/master/remoteinstall.sh -O -)"`
 
-or curl: 
+Using curl: 
 
 * `sh -c "$(curl -fsSL https://raw.github.com/RShadowhand/ZShadow/master/remoteinstall.sh)"`
 

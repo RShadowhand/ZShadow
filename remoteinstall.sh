@@ -23,15 +23,22 @@ printf "\n"
 if [ ! -d "$ZSH" ]; then
     printf "${RED}You don't have oh-my-zsh installed.\n"
     printf "You'll need to install oh-my-zsh to be able to use ZShadow.${NORMAL}\n"
-    printf "\n"
+    printf "Exiting.\n\n"
     exit
 fi
 
-printf "${GREEN}Creating \"$ZSH/custom/themes\" and downloading the files into it.${NORMAL}\n"
+source $ZSH/oh-my-zsh.sh
 
-mkdir $ZSH/custom/themes
-wget https://raw.githubusercontent.com/RShadowhand/ZShadow/master/themes/ZShadow-Name.zsh-theme -P $ZSH/custom/themes/
-wget https://raw.githubusercontent.com/RShadowhand/ZShadow/master/themes/ZShadow-Time.zsh-theme -P $ZSH/custom/themes/
+printf "${GREEN}Creating $YELLOW\""$ZSH_CUSTOM"/themes/\"$GREEN and downloading the files into it.\n"
 
-printf "${GREEN}Themes are downloaded into \"$ZSH/custom\".\n"
-printf "Change the theme line in your .zshrc to either $YELLOW'ZShadow-Time'$GREEN or $YELLOW'ZShadow-Name'$GREEN.${NORMAL}\n\n"
+mkdir "$ZSH_CUSTOM"/themes &> /dev/null
+
+printf "Downloading $YELLOW'ZShadow-Name'$GREEN to $YELLOW"$ZSH_CUSTOM"/themes/$GREEN ... "
+wget https://raw.githubusercontent.com/RShadowhand/ZShadow/master/themes/ZShadow-Name.zsh-theme -q -P "$ZSH_CUSTOM"/themes/
+printf "Done!\n"
+printf "Downloading $YELLOW'ZShadow-Time'$GREEN to $YELLOW"$ZSH_CUSTOM"/themes/$GREEN ... "
+wget https://raw.githubusercontent.com/RShadowhand/ZShadow/master/themes/ZShadow-Time.zsh-theme -q -P "$ZSH_CUSTOM"/themes/
+printf "Done!\n"
+
+printf "${GREEN}Themes are downloaded into $YELLOW\""$ZSH_CUSTOM"\"$GREEN.\n"
+printf "Change the theme line in your $YELLOW'.zshrc'$GREEN to either $YELLOW'ZShadow-Time'$GREEN or $YELLOW'ZShadow-Name'$GREEN.${NORMAL}\n\n"
