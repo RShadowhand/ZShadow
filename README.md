@@ -4,7 +4,7 @@ A minimal BASH-like theme that change from green to red when logged in as root o
 
  
 
-## ZShadow-Name
+## ZShadow-Time
 
 Root: Red color, uses #.
 
@@ -14,7 +14,7 @@ User: Green color, uses $.
 
 ![user-ZShadow-Name](https://raw.githubusercontent.com/RShadowhand/ZShadow/master/img/USER-ZShadow-Name.png "user-ZShadow-Name")
 
-## ZShadow-Time
+## ZShadow-Name
 
 Root: Red color, uses #.
 
