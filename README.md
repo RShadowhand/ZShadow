@@ -45,6 +45,7 @@ or curl:
 * Cygwin team (for Cygwin itself)
 * zsh team (for Zsh)
 * Oh-my-zsh team (for the pack and a code block for colors in the installer)
+* Maker of risto theme from oh-my-zsh pack (for the initial structure)
 * Internet (for the infinite knowledge it lent me)
 
 ## License
