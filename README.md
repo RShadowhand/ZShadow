@@ -6,8 +6,8 @@ A minimal BASH-like theme that changes from green to red when logged in as root 
 
 Either: 
 
-* clone the repo
-* run `./localinstall.sh`
+* `git clone git@github.com:RShadowhand/ZShadow.git`
+* `./localinstall.sh`
 
 or wget:
 
@@ -16,7 +16,6 @@ or wget:
 or curl: 
 
 * `sh -c "$(curl -fsSL https://raw.github.com/RShadowhand/ZShadow/master/remoteinstall.sh)"`
-***
 
 ## Previews
 
