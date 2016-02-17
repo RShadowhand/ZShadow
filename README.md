@@ -23,11 +23,11 @@ or curl:
 
 **Root**: Red color, uses #.
 
-![root-ZShadow-Name](https://raw.githubusercontent.com/RShadowhand/ZShadow/master/img/ROOT-ZShadow-Name.png "root-ZShadow-Name")
+![root-ZShadow-Time](https://raw.githubusercontent.com/RShadowhand/ZShadow/master/img/ROOT-ZShadow-Time.png "root-ZShadow-Time")
 
 **User**: Green color, uses $.
 
-![user-ZShadow-Name](https://raw.githubusercontent.com/RShadowhand/ZShadow/master/img/USER-ZShadow-Name.png "user-ZShadow-Name")
+![user-ZShadow-Time](https://raw.githubusercontent.com/RShadowhand/ZShadow/master/img/USER-ZShadow-Time.png "user-ZShadow-Time")
 
 #### ZShadow-Name
 
