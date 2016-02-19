@@ -20,7 +20,7 @@ fi
 
 printf "\n"
 
-if [ ! -d "$ZSH" ]; then
+if [ -d "$ZSH" ]; then
     printf "${RED}You don't have oh-my-zsh installed.\n"
     printf "You'll need to install oh-my-zsh to be able to use ZShadow.${NORMAL}\n"
     printf "Exiting.\n\n"
