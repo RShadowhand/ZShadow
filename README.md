@@ -11,11 +11,11 @@ Using git:
 
 Using wget:
 
-*  `sh -c "$(wget https://raw.github.com/RShadowhand/ZShadow/master/remoteinstall.sh -O -)"`
+*  `zsh -c "$(wget https://raw.github.com/RShadowhand/ZShadow/master/remoteinstall.sh -O -)"`
 
 Using curl: 
 
-* `sh -c "$(curl -fsSL https://raw.github.com/RShadowhand/ZShadow/master/remoteinstall.sh)"`
+* `zsh -c "$(curl -fsSL https://raw.github.com/RShadowhand/ZShadow/master/remoteinstall.sh)"`
 
 ## Previews
 
