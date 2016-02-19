@@ -20,7 +20,7 @@ fi
 
 printf "\n"
 
-if [ -d "$ZSH" ]; then
+if [ ! -d "$ZSH" ]; then
     printf "${RED}You don't have oh-my-zsh installed.\n"
     printf "You'll need to install oh-my-zsh to be able to use ZShadow.${NORMAL}\n"
     printf "Exiting.\n\n"
@@ -28,6 +28,11 @@ if [ -d "$ZSH" ]; then
 fi
 
 source $ZSH/oh-my-zsh.sh
+
+if [ ! -d "$ZSH_CUSTOM" ]; then
+		printf "Failed to find oh-my-zsh custom folder."
+		exit
+fi
 
 printf "${GREEN}Creating $YELLOW\""$ZSH_CUSTOM"/themes/\"$GREEN and downloading the files into it.\n"
 
